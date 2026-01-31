@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multimedia</title>
+  </head>
+  <body>
+    <header>
+      <h1>Multimedia</h1>
+      <img
+        src="images/andrew-ridley-jR4Zf-riEjI-unsplash.jpg"
+        alt="header banner"
+        width="100%"
+      />
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="contact-us.html">Contact Us</a>
+      </nav>
+    </header>
+    <main>
+      <h2>Contact Us</h2>
+      <form>
+        <div>
+          <label for="fullname">Full name</label>
+          <input
+            type="text"
+            id="fullname"
+            placeholder="Jane Doe"
+            name="fullname"
+            required
+          />
+        </div>
+        <div>
+          <label for="telephone">Phone number</label>
+          <input
+            type="text"
+            id="telephone"
+            placeholder="+974 #### ####"
+            required
+            pattern="^\+974 \d{4} \d{4}$"
+          />
+        </div>
+        <div>
+          <label for="email">Email address</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="jane@example.com"
+            required
+          />
+        </div>
+        <div>
+          <label>Gender</label>
+          <input
+            type="radio"
+            id="gender-male"
+            name="gender"
+            value="male"
+            required
+          />
+          <label for="gender-male">Male</label>
+          <input
+            type="radio"
+            id="gender-female"
+            name="gender"
+            value="female"
+            required
+          />
+          <label for="gender-female">Female</label>
+        </div>
+        <div>
+          <label for="birthdate">Date of birth</label>
+          <input type="date" id="birthdate" required />
+        </div>
+        <div>
+          <label>Contact</label>
+          <input type="checkbox" id="contact-phone" />
+          <label for="contact-phone">Phone</label>
+          <input type="checkbox" id="contact-email" />
+          <label for="contact-email">Email</label>
+          <input type="checkbox" id="contact-sms" />
+          <label for="contact-sms">SMS</label>
+        </div>
+        <div>
+          <label for="rating">Rating</label>
+          <select id="rating" required>
+            <option value="" disabled selected>Select your option</option>
+            <option value="excellent">Excellent</option>
+            <option value="good">Good</option>
+            <option value="average">Average</option>
+            <option value="poor">Poor</option>
+          </select>
+        </div>
+        <div>
+          <label for="message">Message</label>
+          <textarea id="message" placeholder="Your message"></textarea>
+        </div>
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
+      </form>
+    </main>
+    <footer><p>© 2026 Qatar University</p></footer>
+  </body>
+</html>

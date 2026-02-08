@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style type="text/css">
+      * {
+        /* border: solid 10px black; */
+        outline: solid 1px black;
+      }
+
+      p.cool {
+        color: orange;
+      }
+
+      blockquote.cool {
+        color: yellow;
+      }
+
+      #id {
+        color: violet;
+      }
+
+      p {
+        color: blue;
+      }
+
+      .box {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        padding: 10px;
+        /* border-width: 5px;
+        border-color: black;
+        border-style: solid; */
+        border: 5px solid black;
+        box-sizing: border-box;
+        margin: 10px;
+      }
+
+      .box:hover {
+        background-color: yellow;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Title</h1>
+    <p style="color: green; font-size: large">Paragraph</p>
+    <p class="cool">Paragraph 2</p>
+    <blockquote class="cool">Quote block</blockquote>
+    <p id="id" class="cool">Paragraph 3</p>
+    <p>Paragraph 5</p>
+    <div class="box">
+      <div style="background-color: green"></div>
+    </div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </body>
+</html>

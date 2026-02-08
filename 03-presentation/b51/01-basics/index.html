@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #unique {
+        color: chartreuse;
+      }
+
+      p {
+        color: blue;
+      }
+
+      p.cool {
+        color: green;
+        font-size: xx-large;
+      }
+
+      #box {
+        width: 100px;
+        box-sizing: border-box;
+        height: 100px;
+        padding: 10px 5px 20px 9px;
+        margin: 20px;
+        background-color: orange;
+        border: solid 10px green;
+      }
+    </style>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <p style="color: red; font-size: xx-large">Paragraph</p>
+    <p class="cool">Paragraph 2</p>
+    <blockquote class="cool">This is a quote.</blockquote>
+    <p>Paragraph 3</p>
+    <p id="unique" style="color: maroon">Paragraph 4</p>
+    <div id="box"></div>
+  </body>
+</html>

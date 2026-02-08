@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style type="text/css">
+      p.cool {
+        color: orange;
+      }
+
+      #id {
+        color: blue;
+      }
+
+      p {
+        color: violet;
+      }
+
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: black;
+        padding: 10px;
+        margin: 10px;
+        /* border-type: solid;
+        border-color: red;
+        border-size: 1px; */
+        border: solid red 5px;
+      }
+
+      .box:hover {
+        background-color: green;
+        cursor: pointer;
+      }
+
+      * {
+        /* border: solid 1px black; */
+        box-sizing: border-box;
+        /* padding: 0;
+        margin: 0; */
+      }
+
+      /* HTML: <div class="loader"></div> */
+      .loader {
+        width: fit-content;
+        font-weight: bold;
+        font-family: monospace;
+        font-size: 30px;
+        background: radial-gradient(circle closest-side, #000 94%, #0000)
+          right/calc(200% - 1em) 100%;
+        animation: l24 1s infinite alternate linear;
+      }
+      .loader::before {
+        content: "Loading...";
+        line-height: 1em;
+        color: #0000;
+        background: inherit;
+        background-image: radial-gradient(circle closest-side, #fff 94%, #000);
+        -webkit-background-clip: text;
+        background-clip: text;
+      }
+
+      @keyframes l24 {
+        100% {
+          background-position: left;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Title</h1>
+    <p class="cool" style="color: green; font-size: large">Paragraph</p>
+    <p class="cool">Paragraph 2</p>
+    <blockquote class="cool">Quote block</blockquote>
+    <p>Paragraph 3</p>
+    <p id="id">Paragraph 4</p>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="loader"></div>
+  </body>
+</html>

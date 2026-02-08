@@ -1,0 +1,14 @@
+p,
+li {
+  color: orange;
+}
+
+* {
+  /* border-width: 1px;
+  border-color: black;
+  border-style: solid; */
+  /* border: solid 1px black; */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
